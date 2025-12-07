@@ -3,12 +3,7 @@ package tg.algo;
 
 import java.util.*;
 
-/**
- * ATSP Cheapest Insertion (dirigé):
- * - Initialiser le cycle avec [Depot, v*, Depot] où v* est le point le plus proche du dépôt (u->v).
- * - À chaque étape, insérer le sommet non visité qui minimise le surcoût
- *   dist[i->v] + dist[v->j] - dist[i->j] pour une arête (i->j) du cycle.
- */
+
 public class TSPCheapestInsertionATSP {
 
     public static List<String> tour(Set<String> nodes,

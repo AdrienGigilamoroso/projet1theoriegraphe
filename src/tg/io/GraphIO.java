@@ -5,16 +5,9 @@ import tg.model.Graph;
 import java.io.*;
 import java.nio.file.*;
 
-/**
- * HO1 (non orienté) : u,v,w
- * HO2 (orienté)     : u,v,w
- * HO3 (mixte)       : u,v,w,type   avec type in {"U","D"}
- *  - "U" : double-sens -> arête non orientée
- *  - "D" : sens unique -> arête orientée u->v
- */
 public class GraphIO {
 
-    /** Lecture simple: HO1 (non orienté). */
+
     public static Graph readHO1(String path) throws IOException {
         Graph g = new Graph(false);
         try(BufferedReader br = Files.newBufferedReader(Paths.get(path))){
@@ -32,7 +25,7 @@ public class GraphIO {
         return g;
     }
 
-    /** Lecture HO2 (orienté). */
+
     public static Graph readHO2(String path) throws IOException {
         Graph g = new Graph(true);
         try(BufferedReader br = Files.newBufferedReader(Paths.get(path))){
@@ -50,7 +43,7 @@ public class GraphIO {
         return g;
     }
 
-    /** Lecture HO3 (mixte: colonne 'type' U/D). */
+
     public static Graph readHO3(String path) throws IOException {
         Graph g = new Graph(true); // on gère tout en orienté, et on ajoute U comme double arête
         try(BufferedReader br = Files.newBufferedReader(Paths.get(path))){

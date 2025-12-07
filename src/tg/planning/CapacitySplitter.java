@@ -3,10 +3,7 @@ package tg.planning;
 
 import java.util.*;
 
-/**
- * Découpe une tournée D->...->D en sous-tournées ≤ C (quantités par point).
- * Chaque sous-tournée commence et finit à D.
- */
+
 public class CapacitySplitter {
     public static List<List<String>> splitSequential(List<String> tourWithDepot,
                                                      Map<String,Integer> qty,

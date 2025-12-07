@@ -4,10 +4,7 @@ package tg.algo;
 import tg.model.Graph;
 import java.util.*;
 
-/**
- * Dijkstra (poids >= 0) sur graphe non orienté.
- * Renvoie dist[] et parent[] pour reconstruire les chemins.
- */
+
 public class Dijkstra {
     public static class Result {
         public final Map<String, Double> dist;

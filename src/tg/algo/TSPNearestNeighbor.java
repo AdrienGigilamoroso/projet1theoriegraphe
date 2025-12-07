@@ -4,7 +4,6 @@ package tg.algo;
 import tg.model.Graph;
 import java.util.*;
 
-/** Heuristique TSP "Plus proche voisin" sur le graphe complet des distances. */
 public class TSPNearestNeighbor {
     public static List<String> tour(Graph complete, String depot){
         Set<String> unvisited = new HashSet<>(complete.nodes());

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.nio.file.*;
 import java.util.*;
 
-/** Crée data/ + HO1/HO2/HO3 + points.csv si absents. */
+
 public class BootstrapData {
 
     public static void ensureDataFilesHO123(){

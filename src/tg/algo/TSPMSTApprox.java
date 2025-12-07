@@ -5,12 +5,7 @@ import tg.model.Edge;
 import tg.model.Graph;
 import java.util.*;
 
-/**
- * TSP par MST + DFS préfixe + shortcutting (double-tree).
- * 1) MST sur le graphe complet des distances
- * 2) DFS depuis le dépôt
- * 3) Suppression des revisites
- */
+
 public class TSPMSTApprox {
     public static List<String> tour(Graph complete, String depot){
         List<Edge> T = MSTKruskal.mst(complete);

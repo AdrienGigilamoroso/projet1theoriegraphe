@@ -1,7 +1,6 @@
 
 package tg.model;
 
-/** Arête pondérée (u, v, w) pour graphe non orienté. */
 public class Edge {
     public final String u, v;
     public final double w;

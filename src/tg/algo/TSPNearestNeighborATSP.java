@@ -3,10 +3,7 @@ package tg.algo;
 
 import java.util.*;
 
-/**
- * ATSP Nearest Neighbor (dirigé) sur une matrice des distances:
- * dist[u].get(v) = coût u->v (asymétrique possible).
- */
+
 public class TSPNearestNeighborATSP {
     public static List<String> tour(Set<String> nodes,
                                     String depot,
