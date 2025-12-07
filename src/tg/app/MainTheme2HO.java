@@ -16,12 +16,7 @@ import java.io.IOException;
 import java.nio.file.*;
 import java.util.*;
 
-/**
- * Main Thème 2 avec sélection HO1/HO2/HO3:
- * - HO1: non orienté -> NN + MST+DFS+shortcut
- * - HO2/HO3: dirigé/mixte -> NN (ATSP) + Cheapest Insertion (ATSP)
- * - tout repose sur des distances de plus court chemin (Dijkstra) calculées sur le graphe routier.
- */
+
 public class MainTheme2HO {
 
     private static final Scanner sc = new Scanner(System.in);

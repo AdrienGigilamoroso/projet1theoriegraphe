@@ -5,10 +5,7 @@ import tg.model.Edge;
 import tg.model.Graph;
 import java.util.*;
 
-/**
- * Kruskal pour un graphe NON orienté.
- * Complexité : O(m log m) pour le tri des arêtes.
- */
+
 public class MSTKruskal {
 
     static class DSU {
@@ -31,7 +28,6 @@ public class MSTKruskal {
         }
     }
 
-    /** Construit un MST et renvoie les arêtes sélectionnées. */
     public static List<Edge> mst(Graph g){
         List<Edge> E = new ArrayList<>(g.edges());
         E.sort(Comparator.comparingDouble(e -> e.w));
