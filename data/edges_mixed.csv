@@ -1,0 +1,10 @@
+u,v,w,type
+Depot,A,2,U
+A,B,2,U
+B,C,2,D
+C,Depot,3,U
+A,D,2,D
+D,E,2,U
+E,C,2.5,U
+Depot,F,4,U
+F,C,2.5,D

@@ -1,0 +1,11 @@
+u,v,w
+Depot,A,2
+A,B,2
+B,C,2
+C,Depot,3
+A,D,1.5
+D,E,2
+E,C,2.5
+B,E,2
+Depot,F,4
+F,C,2.5
