@@ -2,7 +2,7 @@ import java.util.*;
 
 public class EulerianSolver {
 
-    /** Vérifie la connexité (en ignorant les sommets isolés). */
+
     private static boolean isConnected(Graph g) {
         int n = g.getNbSommets();
         boolean[] visited = new boolean[n];
@@ -14,7 +14,7 @@ public class EulerianSolver {
                 break;
             }
         }
-        if (start == -1) return true; // pas d'arêtes
+        if (start == -1) return true;
 
         Deque<Integer> stack = new ArrayDeque<>();
         stack.push(start);
@@ -37,9 +37,7 @@ public class EulerianSolver {
         return true;
     }
 
-    /**
-     * Chemin / circuit eulérien (Hierholzer) pour graphe non orienté.
-     */
+
     public static List<Integer> findEulerianTrail(Graph g) {
         if (!g.isPurelyUndirected()) {
             throw new IllegalArgumentException("EulerianSolver : toutes les arêtes doivent être non orientées.");

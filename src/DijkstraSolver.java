@@ -17,13 +17,7 @@ public class DijkstraSolver {
         }
     }
 
-    /**
-     * Algorithme de Dijkstra à partir d'une source.
-     * Fonctionne pour :
-     *  - graphes non orientés
-     *  - graphes orientés
-     *  - graphes mixtes (mélange des deux)
-     */
+
     public static Result dijkstra(Graph g, int source) {
         int n = g.getNbSommets();
         Result res = new Result();
@@ -70,9 +64,7 @@ public class DijkstraSolver {
         return res;
     }
 
-    /**
-     * Reconstruit le chemin source -> target à partir de prev.
-     */
+
     public static List<Integer> buildPath(Result res, int source, int target) {
         List<Integer> path = new ArrayList<>();
         if (res.dist[target] == Double.POSITIVE_INFINITY) {

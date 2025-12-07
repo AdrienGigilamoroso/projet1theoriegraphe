@@ -4,10 +4,6 @@ public class MainTheme1 {
 
     public static void main(String[] args) {
 
-        // ============================================
-        // PARTIE A : EULER & POSTIER CHINOIS
-        // Graphe NON orienté, NON pondéré
-        // ============================================
         System.out.println("=== PARTIE A : graphe non orienté, non pondéré ===");
 
         Graph gEuler = new Graph(5); // sommets 0..4
@@ -37,12 +33,10 @@ public class MainTheme1 {
         }
         System.out.println("\n");
 
-        // ============================================
-        // PARTIE B1 : DIJKSTRA - GRAPHE ORIENTÉ PONDÉRÉ
-        // ============================================
+
         System.out.println("=== PARTIE B1 : Dijkstra sur graphe orienté pondéré ===");
 
-        Graph gOriente = new Graph(5, true); // arêtes orientées par défaut
+        Graph gOriente = new Graph(5, true);
 
         gOriente.addEdge(0, 1, 10);
         gOriente.addEdge(0, 2, 3);
@@ -64,9 +58,7 @@ public class MainTheme1 {
         }
         System.out.println("\n");
 
-        // ============================================
-        // PARTIE B2 : DIJKSTRA - GRAPHE NON ORIENTÉ PONDÉRÉ
-        // ============================================
+
         System.out.println("=== PARTIE B2 : Dijkstra sur graphe non orienté pondéré ===");
 
         Graph gNonOriente = new Graph(5, false); // arêtes non orientées par défaut
@@ -87,21 +79,17 @@ public class MainTheme1 {
         }
         System.out.println("\n");
 
-        // ============================================
-        // PARTIE B3 : DIJKSTRA - GRAPHE MIXTE
-        // Mélange d'arêtes orientées et non orientées
-        // ============================================
+
         System.out.println("=== PARTIE B3 : Dijkstra sur graphe MIXTE (orienté + non orienté) ===");
 
-        Graph gMixte = new Graph(6); // par défaut : non orienté
+        Graph gMixte = new Graph(6);
 
-        // arêtes non orientées
         gMixte.addEdge(0, 1, 2);      // 0 --2-- 1
         gMixte.addEdge(1, 2, 2);      // 1 --2-- 2
         gMixte.addEdge(2, 3, 2);      // 2 --2-- 3
 
-        // arêtes orientées (sens unique)
-        gMixte.addDirectedEdge(0, 4, 1); // 0 -> 4 (rapide)
+
+        gMixte.addDirectedEdge(0, 4, 1); // 0 -> 4
         gMixte.addDirectedEdge(4, 3, 5); // 4 -> 3
         gMixte.addDirectedEdge(3, 5, 1); // 3 -> 5
 

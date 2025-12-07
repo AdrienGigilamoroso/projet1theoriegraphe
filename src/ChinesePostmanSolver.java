@@ -12,10 +12,7 @@ public class ChinesePostmanSolver {
         return odds;
     }
 
-    /**
-     * Problème du postier chinois sur graphe non orienté.
-     * Version simple avec appariement glouton des sommets impairs.
-     */
+
     public static List<Integer> solve(Graph original) {
         if (!original.isPurelyUndirected()) {
             throw new IllegalArgumentException("ChinesePostmanSolver : toutes les arêtes doivent être non orientées.");
@@ -51,7 +48,7 @@ public class ChinesePostmanSolver {
                 int a = path.get(i);
                 int b = path.get(i + 1);
                 double w = g.getEdgeWeight(a, b);
-                g.addUndirectedEdge(a, b, w); // duplication d'arête
+                g.addUndirectedEdge(a, b, w);
             }
 
             oddVertices.remove(Integer.valueOf(u));
